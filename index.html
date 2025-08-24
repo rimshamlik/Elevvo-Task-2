@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
+
+    <!-- Font Awosome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <section class="background_img img_fluid">
+
+        <div class="container">
+            <form action="" class="contact_form">
+                <input type="text" placeholder="Full Name" class="input_field" required>
+
+                <input type="email" name="Email Address" placeholder="Email Address" class="input_field" required>
+
+                <input type="text" placeholder="Subject" class="input_field" required>
+
+                <label for="message" name="message" class="text_msg">
+                    Message
+                </label>
+                <textarea name="message" class="input_field messge_box" rows="4"></textarea>
+
+                <button class="btn input_field"> Submit </button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const form = document.querySelector('.contact_form');
+
+        form.addEventListener('submit', function (event) {
+            if (form.checkValidity()) {
+                alert('Form Submitted Successfully!');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

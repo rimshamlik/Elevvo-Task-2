@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid rebeccapurple; */
+
+}
+
+.background_img {
+    height: 100vh;
+    background-image: url(images/back\ img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 500px;
+    width: 30%;
+    position: relative;
+    top: 60px;
+    left: 500px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 10px 20px 5px rgba(15, 15, 13, 0.279);
+}
+
+.contact_form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.input_field {
+    margin: 0px 30px 0px 30px;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgba(245, 245, 245, 0.865);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text_msg {
+    color: white;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.messge_box {
+    resize: none;
+}
+
+.btn {
+    background-color: rgba(30, 89, 130, 0.612);
+    width: 30%;
+    height: 50px;
+    margin-left: 150px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    transform: translateY(5px);
+    transform: scale(1.1);
+    background-color: rgba(30, 70, 130, 0.856);
+}
